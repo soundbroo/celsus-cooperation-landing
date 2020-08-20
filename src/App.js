@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import Footer from "./components/Footer";
+import LastContentBlock from "./components/LastContentBlock";
+import FirstContentBlock from "./components/FirstContentBlock";
+import IntroBlock from "./components/IntroBlock";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  * {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+`;
+
+const App = () => (
+  <>
+    <GlobalStyle />
+    <Wrapper>
+      <LastContentBlock>
+        <FirstContentBlock>
+          <IntroBlock />
+        </FirstContentBlock>
+      </LastContentBlock>
+      <Footer />
+    </Wrapper>
+  </>
+);
 
 export default App;
+
+const Wrapper = styled.div`
+  background: #0b1e2e;
+`;

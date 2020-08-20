@@ -1,0 +1,28 @@
+<svg width="1216" height="184" viewBox="0 0 1216 184" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1216" height="184">
+<rect width="1216" height="184" rx="24" fill="url(#paint0_linear)"/>
+</mask>
+<g mask="url(#mask0)">
+<path opacity="0.5" d="M899.87 25.0146L717.386 336M899.87 25.0146L922 100M899.87 25.0146L967 44.5001M1116.48 144.428L1174.78 79.932M1116.48 144.428L1271 205.731L1174.78 79.932M1116.48 144.428L1079.04 266.396L976.5 158M1116.48 144.428L1040.17 129.5M1174.78 79.932L1040.17 25.0146M1174.78 79.932L1223 -21.9999L1040.17 25.0146M1040.17 25.0146L980.922 -47.1442L967 44.5001M1040.17 25.0146V129.5M922 100L899.87 192.96L915.038 280.444L976.5 158M922 100L967 44.5001M922 100L976.5 158M967 44.5001L1040.17 129.5M1040.17 129.5L976.5 158M697.953 40.3404L842.992 280.444L606 192.96L697.953 40.3404Z" stroke="#CAD6DE"/>
+<circle cx="698" cy="42" r="3" fill="#CAD6DE"/>
+<circle cx="1042" cy="25" r="6" fill="#CAD6DE"/>
+<circle opacity="0.7" cx="1042" cy="25" r="8.5" stroke="#CAD6DE"/>
+<circle opacity="0.2" cx="1042" cy="25" r="12.5" stroke="#CAD6DE"/>
+<circle cx="1116" cy="145" r="3" fill="#CAD6DE"/>
+<circle opacity="0.3" cx="1116" cy="145" r="7.5" stroke="#CAD6DE"/>
+<circle cx="1039" cy="129" r="3" fill="#CAD6DE"/>
+<circle cx="967" cy="45" r="3" fill="#CAD6DE"/>
+<circle opacity="0.2" cx="1175" cy="81" r="8.5" stroke="#CAD6DE"/>
+<circle cx="1175" cy="81" r="5" fill="#CAD6DE"/>
+<circle cx="976" cy="157" r="3" fill="#CAD6DE"/>
+<circle cx="900" cy="26" r="3" fill="#CAD6DE"/>
+<circle opacity="0.4" cx="900" cy="26" r="5.5" stroke="#CAD6DE"/>
+<circle cx="928" cy="107" r="3" fill="#CAD6DE"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="920" y1="199.5" x2="1026" y2="-74.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.5"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>
