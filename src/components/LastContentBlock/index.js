@@ -6,6 +6,7 @@ import Button from "../Common/Button";
 
 import { ReactComponent as ButtonArrowIcon } from "../../img/ButtonArrowIcon.svg";
 import DiscussForm from "./DiscussForm";
+import Partners from "./Partners";
 
 const NEWS = [
   {
@@ -28,6 +29,7 @@ const NEWS = [
 const LastContentBlock = ({ children }) => (
   <Wrapper>
     {children}
+    <Partners />
     <NewsWrapper>
       <Title>Новости</Title>
       <News>
@@ -68,6 +70,7 @@ const Wrapper = styled.div`
 const Title = styled.div`
   font-size: 16px;
   line-height: 140.62%;
+  font-weight: bold;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #000000;

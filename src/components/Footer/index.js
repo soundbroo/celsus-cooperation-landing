@@ -98,13 +98,13 @@ const Social = styled.div`
     line-height: 16px;
     color: #ffffff;
     opacity: 0.5;
-    margin-right: 18px;
+    margin-right: 25px;
   }
   > div {
     display: flex;
     align-items: center;
-    > svg {
-      margin-left: 8px;
+    > svg:not(:last-child) {
+      margin-right: 16px;
     }
   }
 `;

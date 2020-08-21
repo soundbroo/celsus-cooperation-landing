@@ -17,7 +17,7 @@ const Select = styled.select`
   box-sizing: border-box;
   border-radius: 48px;
   height: 56px;
-  width: 208px;
+  width: 100%;
   padding: 20px 24px;
   outline: none;
   font-size: 14px;

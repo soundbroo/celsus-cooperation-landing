@@ -2,10 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const InputField = ({ placeholder }) => (
-  <Input type="text" placeholder={placeholder} />
+  <Wrapper>
+    <Input type="text" placeholder={placeholder} />
+  </Wrapper>
 );
 
 export default InputField;
+
+const Wrapper = styled.div``;
 
 const Input = styled.input`
   background: #ffffff;
@@ -13,9 +17,9 @@ const Input = styled.input`
   box-sizing: border-box;
   border-radius: 48px;
   height: 56px;
-  width: 208px;
   padding: 20px 24px;
   outline: none;
+  width: 100%;
   font-size: 14px;
   line-height: 16px;
   color: #000000;

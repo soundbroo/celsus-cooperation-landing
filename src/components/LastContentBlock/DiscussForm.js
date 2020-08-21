@@ -10,22 +10,22 @@ import DiscussFormBg from "../../img/DiscussFormBg.svg";
 const DiscussForm = () => (
   <Wrapper>
     <Title>Обсудить сотрудничество</Title>
-    <Row>
-      <InputField placeholder="Имя" />
-      <InputField placeholder="Отчество" />
-      <InputField placeholder="E-mail" />
-      <InputField placeholder="+7" />
-    </Row>
-    <Row>
+    <FirstRow>
+      <InputField placeholder="Имя" style={{ flex: 3 }} />
+      <InputField placeholder="Отчество" style={{ flex: 3 }} />
+      <InputField placeholder="E-mail" style={{ flex: 4 }} />
+      <InputField placeholder="+7" style={{ flex: 2 }} />
+    </FirstRow>
+    <SecondRow>
       <InputField placeholder="Организация" />
       <InputField placeholder="Должность" />
-    </Row>
-    <Row>
+    </SecondRow>
+    <ThirdRow>
       <SelectField
         placeholder="Позиция"
         options={["Так", "Или так", "Или вот так", "А может и так"]}
       />
-    </Row>
+    </ThirdRow>
     <Send>
       <Button>Отправить</Button>
       <span>
@@ -59,12 +59,44 @@ const Title = styled.span`
   margin-bottom: 48px;
 `;
 
-const Row = styled.span`
+const Row = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 12px;
-  > input:not(:last-child) {
+  flex: 1;
+  max-width: 700px;
+  > div:not(:last-child) {
     margin-right: 12px;
+  }
+`;
+
+const FirstRow = styled(Row)`
+  max-width: 880px;
+  > div:nth-child(1),
+  div:nth-child(2) {
+    flex: 6;
+  }
+  > div:nth-child(3) {
+    flex: 7;
+  }
+  > div:nth-child(4) {
+    flex: 5;
+  }
+`;
+
+const SecondRow = styled(Row)`
+  max-width: 820px;
+  > div:nth-child(1) {
+    flex: 2;
+  }
+  > div:nth-child(2) {
+    flex: 1;
+  }
+`;
+
+const ThirdRow = styled(Row)`
+  > div {
+    flex: 1;
   }
 `;
 
