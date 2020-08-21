@@ -4,11 +4,11 @@ import styled from "styled-components";
 import { ReactComponent as PhoneIcon } from "../../img/PhoneIcon.svg";
 
 const PhoneAneMailButton = ({ dark }) => (
-  <Wrapper dark={dark}>
-    <Icon>
+  <Wrapper>
+    <Icon dark={dark}>
       <PhoneIcon />
     </Icon>
-    <Contacts>
+    <Contacts dark={dark}>
       <span>+7 499 704 05-04</span>
       <span>celsus@celsus.ai</span>
     </Contacts>
@@ -27,7 +27,7 @@ const Icon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: ${({ dark }) => (dark ? 0.32 : 1)};
+  opacity: ${({ dark }) => (dark ? 1 : 0.32)};
   border: 1px solid #ffffff;
   border-radius: 30px;
   width: 44px;

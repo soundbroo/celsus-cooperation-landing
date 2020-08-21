@@ -5,6 +5,7 @@ const Button = ({
   children,
   size,
   dark,
+  white,
   outlined,
   fontColor,
   fontSize,
@@ -14,6 +15,7 @@ const Button = ({
   <Wrapper
     size={size}
     dark={dark}
+    white={white}
     outlined={outlined}
     fontColor={fontColor}
     fontSize={fontSize}
@@ -42,7 +44,12 @@ const Wrapper = styled.div`
       ? "none"
       : "#00B2FF"};
   color: ${({ fontColor }) => fontColor || "#fff"};
-  border: ${({ outlined }) => (outlined ? "2px solid #00B2FF" : "none")};
+  border: ${({ outlined, white }) =>
+    outlined && white
+      ? "2px solid #fff"
+      : outlined
+      ? "2px solid #00B2FF"
+      : "none"};
   font-size: ${({ fontSize }) => (fontSize === "small" ? "14px" : "16px")};
   line-height: ${({ fontSize }) => (fontSize === "small" ? "16px" : "20px")};
   border-radius: 78px;
@@ -50,5 +57,8 @@ const Wrapper = styled.div`
   cursor: pointer;
   > svg {
     margin-left: 16px;
+    > path {
+      ${({ white }) => white && "fill: #fff"};
+    }
   }
 `;

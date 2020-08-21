@@ -5,9 +5,10 @@ import IntroBackground from "../../img/IntroBackground.svg";
 import { ReactComponent as IntroCoopIcon } from "../../img/IntroCoopIcon.svg";
 import Button from "../Common/Button";
 
-const IntroBlock = () => (
+const IntroBlock = ({ children }) => (
   <Wrapper>
     <Background>
+      {children}
       <Content>
         <IntroCoopIcon />
         <Info>
@@ -38,7 +39,8 @@ const Wrapper = styled.div`
 const Background = styled.div`
   position: absolute;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   top: 0%;
   left: 0;
   right: 0;

@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import LastContentBlock from "./components/LastContentBlock";
 import FirstContentBlock from "./components/FirstContentBlock";
 import IntroBlock from "./components/IntroBlock";
+import Header from "./components/Header";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -23,7 +24,9 @@ const App = () => (
     <Wrapper>
       <LastContentBlock>
         <FirstContentBlock>
-          <IntroBlock />
+          <IntroBlock>
+            <Header />
+          </IntroBlock>
         </FirstContentBlock>
       </LastContentBlock>
       <Footer />
