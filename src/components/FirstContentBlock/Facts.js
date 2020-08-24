@@ -39,11 +39,18 @@ const Wrapper = styled.div`
 
 const Items = styled.div`
   display: flex;
+  @media (max-width: 1250px) {
+    flex-direction: column;
+    padding: 0 20px;
+  }
   > div {
     max-width: 592px;
-    width: 592px;
+    width: 100%;
     &:first-child {
       margin-right: 40px;
+    }
+    @media (max-width: 1250px) {
+      max-width: 100%;
     }
   }
 `;

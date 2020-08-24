@@ -20,6 +20,9 @@ export default LangSelector;
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 758px) {
+    display: none;
+  }
 `;
 
 const Lang = styled.div`

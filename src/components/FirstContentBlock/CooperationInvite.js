@@ -65,18 +65,31 @@ const Title = styled.div`
   line-height: 140.62%;
   color: #000000;
   margin: 72px 0 56px 0;
+  @media (max-width: 1250px) {
+    padding: 0 20px;
+  }
 `;
 
 const Cards = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
+  @media (max-width: 1250px) {
+    grid-template-columns: 100%;
+    padding: 0 20px;
+  }
   > div {
     margin-bottom: 32px;
   }
   > div:nth-child(2n + 1) {
     margin-right: 16px;
+    @media (max-width: 1250px) {
+      margin-right: 0;
+    }
   }
   > div:nth-child(2n) {
     margin-left: 16px;
+    @media (max-width: 1250px) {
+      margin-left: 0;
+    }
   }
 `;

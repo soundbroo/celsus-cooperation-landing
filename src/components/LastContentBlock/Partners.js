@@ -47,6 +47,9 @@ const Title = styled.span`
   text-transform: uppercase;
   color: #000000;
   opacity: 0.3;
+  @media (max-width: 1250px) {
+    padding: 0 20px;
+  }
 `;
 
 const Carousel = styled.div`
@@ -55,21 +58,27 @@ const Carousel = styled.div`
   justify-content: space-between;
   height: 160px;
   margin-top: 40px;
+  @media (max-width: 1250px) {
+    margin: 40px 20px 0 20px;
+  }
   > svg {
     cursor: pointer;
+    flex-shrink: 0;
   }
 `;
 
 const Content = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
   width: 100%;
+  overflow: auto;
   > div {
     width: 130px;
     height: 130px;
     border-radius: 50%;
     background: #cecece;
+    flex-shrink: 0;
+    margin: 0 auto;
   }
 `;
 

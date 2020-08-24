@@ -49,6 +49,9 @@ const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-position: top;
   border-radius: 24px;
+  @media (max-width: 1250px) {
+    margin: 0 20px;
+  }
 `;
 
 const Title = styled.span`
@@ -104,6 +107,9 @@ const Send = styled.span`
   display: flex;
   align-items: center;
   margin-top: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   > div:first-child {
     margin-right: 24px;
   }

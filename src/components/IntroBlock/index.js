@@ -70,6 +70,9 @@ const Info = styled.div`
   justify-content: space-around;
   height: 100%;
   width: 100%;
+  @media (max-width: 1250px) {
+    padding-right: 20px;
+  }
   > span {
     font-weight: 500;
     font-size: 40px;
@@ -78,6 +81,15 @@ const Info = styled.div`
   > div {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+    > div {
+      flex-shrink: 0;
+      @media (max-width: 900px) {
+        margin-top: 40px;
+      }
+    }
     > span {
       font-weight: 300;
       font-size: 22px;

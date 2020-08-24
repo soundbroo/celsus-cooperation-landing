@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   background: #ffffff;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.06), 0px 8px 32px rgba(0, 0, 0, 0.06);
   border-radius: 16px;
-  width: 384px;
+  max-width: 384px;
   overflow: hidden;
 `;
 

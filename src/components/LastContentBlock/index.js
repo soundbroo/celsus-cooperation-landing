@@ -87,8 +87,14 @@ const NewsWrapper = styled.div`
 const News = styled.div`
   display: flex;
   justify-content: center;
+  @media (max-width: 1250px) {
+    flex-direction: column;
+  }
   > div:not(:last-child) {
     margin-right: 32px;
+    @media (max-width: 1250px) {
+      margin: 0 0 32px 0;
+    }
   }
 `;
 

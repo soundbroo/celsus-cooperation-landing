@@ -55,8 +55,14 @@ const DownloadPresentation = styled.div`
     line-height: 140.62%;
     color: #000000;
     margin-bottom: 20px;
+    @media (max-width: 1250px) {
+      padding: 0 20px;
+    }
   }
   > div {
     align-self: flex-start;
+    @media (max-width: 1250px) {
+      margin: 0 20px;
+    }
   }
 `;

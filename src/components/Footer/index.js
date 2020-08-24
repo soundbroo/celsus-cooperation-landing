@@ -52,6 +52,9 @@ export default Footer;
 const Wrapper = styled.div`
   max-width: 1216px;
   margin: auto;
+  @media (max-width: 1250px) {
+    padding: 0 20px;
+  }
 `;
 
 const MainFooter = styled.div`
@@ -59,6 +62,14 @@ const MainFooter = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 196px;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    > svg {
+      margin: 40px 0 35px 0;
+    }
+  }
 `;
 
 const UnderFooter = styled.div`
@@ -67,11 +78,28 @@ const UnderFooter = styled.div`
   justify-content: space-between;
   height: 72px;
   border-top: 1px solid #324250;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    border-top: none;
+    height: 100%;
+  }
 `;
 
 const Buttons = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    > div:first-child {
+      margin-bottom: 8px;
+    }
+    > div:nth-child(2) {
+      margin-bottom: 35px;
+    }
+    > div:last-child {
+      margin-bottom: 48px;
+    }
+  }
   > div {
     margin: 0 16px;
   }
@@ -80,6 +108,9 @@ const Buttons = styled.div`
 const Texts = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
   > span {
     color: #fff;
     font-size: 14px;
@@ -87,22 +118,39 @@ const Texts = styled.div`
     &:first-child {
       margin-right: 32px;
     }
+    @media (max-width: 1024px) {
+      &:first-child {
+        margin: 0 0 8px 0;
+      }
+      &:last-child {
+        margin-bottom: 32px;
+      }
+    }
   }
 `;
 
 const Social = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
   > span {
     font-size: 14px;
     line-height: 16px;
     color: #ffffff;
     opacity: 0.5;
     margin-right: 25px;
+    @media (max-width: 1024px) {
+      margin: 0 0 25px 0;
+    }
   }
   > div {
     display: flex;
     align-items: center;
+    @media (max-width: 1024px) {
+      margin: 0 0 48px 0;
+    }
     > svg:not(:last-child) {
       margin-right: 16px;
     }
