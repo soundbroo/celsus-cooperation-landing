@@ -17,5 +17,8 @@ const Wrapper = styled.div`
     line-height: 140.62%;
     color: #000000;
     opacity: 0.75;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 `;

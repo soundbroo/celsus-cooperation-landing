@@ -79,6 +79,9 @@ const Cards = styled.div`
   }
   > div {
     margin-bottom: 32px;
+    @media (max-width: 1250px) {
+      margin-bottom: 16px;
+    }
   }
   > div:nth-child(2n + 1) {
     margin-right: 16px;

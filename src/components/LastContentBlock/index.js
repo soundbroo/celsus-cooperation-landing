@@ -77,11 +77,16 @@ const Title = styled.div`
   opacity: 0.3;
   text-align: left;
   margin-bottom: 24px;
+  @media (max-width: 1250px) {
+    padding: 0 20px;
+  }
 `;
 
 const NewsWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: 1216px;
+  width: 100%;
 `;
 
 const News = styled.div`
@@ -89,6 +94,7 @@ const News = styled.div`
   justify-content: center;
   @media (max-width: 1250px) {
     flex-direction: column;
+    padding: 0 20px;
   }
   > div:not(:last-child) {
     margin-right: 32px;
@@ -101,6 +107,9 @@ const News = styled.div`
 const AllNewsButton = styled.div`
   display: flex;
   margin: 32px 0 0 0;
+  @media (max-width: 1250px) {
+    margin: 32px 0 0 32px;
+  }
 `;
 
 const DiscussFormWrapper = styled.div`

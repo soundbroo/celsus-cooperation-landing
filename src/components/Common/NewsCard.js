@@ -34,6 +34,9 @@ const Wrapper = styled.div`
   border-radius: 16px;
   max-width: 384px;
   overflow: hidden;
+  @media (max-width: 1250px) {
+    max-width: 100%;
+  }
 `;
 
 const Image = styled.div`
@@ -51,22 +54,25 @@ const Image = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 24px;
-  justify-content: flex-end;
+  padding: 24px 0;
+  justify-content: space-between;
   height: 106px;
+  width: 100%;
 `;
 
-const Title = styled.h4`
+const Title = styled.span`
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 140%;
   color: #000;
+  padding: 0 24px;
 `;
 
 const Footer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 24px;
 `;
 
 const Tags = styled.div`
@@ -81,14 +87,14 @@ const Tags = styled.div`
     height: 32px;
     padding: 0 14px;
     margin-right: 4px;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 18px;
     color: #000;
   }
 `;
 
 const Date = styled.div`
-  font-size: 14px;
+  font-size: 12px;
   line-height: 140.62%;
   color: #000000;
   opacity: 0.4;
