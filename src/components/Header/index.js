@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import { ReactComponent as CelsusLogoRu } from "../../img/CelsusLogoRu.svg";
+import logoRu from "../../img/CelsusLogoRu.svg";
+import logoEn from "../../img/CelsusLogoEnMobile.svg";
 import { ReactComponent as ButtonPdfIcon } from "../../img/ButtonPdfIcon.svg";
 import { ReactComponent as NavMobileIcon } from "../../img/NavMobileIcon.svg";
 import { ReactComponent as CloseIcon } from "../../img/CloseIcon.svg";
@@ -9,6 +10,8 @@ import { ReactComponent as CloseIcon } from "../../img/CloseIcon.svg";
 import PhoneAndMailButton from "../Common/PhoneAndMailButton";
 import LangSelector from "../Common/LangSelector";
 import Button from "../Common/Button";
+
+import MobileContacts from "./MobileContacts";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -18,7 +21,8 @@ const Header = () => {
 
   return (
     <Wrapper>
-      <CelsusLogoRu />
+      <Logo />
+      <MobileContacts />
       <Nav open={open}>
         <NavLinks>
           <span>
@@ -43,9 +47,7 @@ const Header = () => {
           <CloseIcon />
         </Close>
       </Nav>
-      <NavMobileMenu onClick={handleOpen}>
-        <NavMobileIcon />
-      </NavMobileMenu>
+
       <Buttons>
         <PhoneAndMailButton dark />
         <Button
@@ -57,6 +59,9 @@ const Header = () => {
         >
           Презентация
         </Button>
+        <NavMobileMenu onClick={handleOpen}>
+          <NavMobileIcon />
+        </NavMobileMenu>
         <LangSelector />
       </Buttons>
     </Wrapper>
@@ -69,15 +74,31 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   position: absolute;
-  max-width: 1216px;
+  max-width: 1230px;
   margin: auto;
   top: 28px;
   height: 44px;
   width: 100%;
   justify-content: space-around;
   @media (max-width: 768px) {
+    top: 40px;
     background: #fff;
     height: 64px;
+    justify-content: space-between;
+  }
+`;
+
+const Logo = styled.div`
+  width: 200px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: ${`url(${logoRu})`};
+  @media (max-width: 768px) {
+    width: 130px;
+    height: 28px;
+    background-image: ${`url(${logoEn})`};
+    margin-left: 16px;
   }
 `;
 
@@ -102,7 +123,6 @@ const NavMobileMenu = styled.div`
   transform: scale(0);
   @media (max-width: 1250px) {
     width: 24px;
-    height: 24px;
     order: 1;
     transform: scale(1);
     transition: transform 0.3s ease;
@@ -193,16 +213,33 @@ const Buttons = styled.div`
   align-items: center;
   > div:not(:last-child) {
     margin-right: 24px;
+    @media (max-width: 768px) {
+      margin-right: 12px;
+    }
   }
   @media (max-width: 768px) {
     > div:first-child {
       display: none;
     }
+    > div:last-child {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
     > div:nth-child(2) {
       background: #fff;
       border-color: #00b2ff;
       color: #00b2ff;
+      max-width: 104px;
+      width: 100%;
+      height: 32px;
+      font-size: 11px;
+      line-height: 13px;
+      padding: 0 9px 0 15px;
       > svg {
+        width: 16px;
+        height: 16px;
+        margin-left: 6px;
         > path {
           fill: #00b2ff;
         }
