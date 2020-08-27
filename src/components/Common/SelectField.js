@@ -1,15 +1,37 @@
 import React from "react";
 import styled from "styled-components";
 
+import openIcon from "../../img/SelectOpenIcon.svg";
+
 const SelectField = ({ placeholder, options }) => (
-  <Select placeholder={placeholder}>
-    {options?.map((option) => (
-      <option>{option}</option>
-    ))}
-  </Select>
+  <Wrapper>
+    <Select placeholder={placeholder}>
+      {options?.map((option) => (
+        <option>{option}</option>
+      ))}
+    </Select>
+  </Wrapper>
 );
 
 export default SelectField;
+
+const Wrapper = styled.div`
+  position: relative;
+  &:after {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 24px;
+    top: calc(50% - 6px);
+    width: 12px;
+    height: 12px;
+    background-image: ${`url(${openIcon})`};
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+`;
 
 const Select = styled.select`
   background: #ffffff;
@@ -23,6 +45,7 @@ const Select = styled.select`
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+  appearance: none;
   &::placeholder {
     font-size: 14px;
     line-height: 16px;

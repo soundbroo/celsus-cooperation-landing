@@ -58,6 +58,9 @@ const Wrapper = styled.div`
   max-width: 1216px;
   width: 100%;
   margin-bottom: 106px;
+  @media (max-width: 1250px) {
+    margin-bottom: 62px;
+  }
 `;
 
 const Title = styled.div`
@@ -67,6 +70,11 @@ const Title = styled.div`
   margin: 72px 0 56px 0;
   @media (max-width: 1250px) {
     padding: 0 20px;
+  }
+  @media (max-width: 768px) {
+    margin: 40px 0 32px 0;
+    font-weight: 300;
+    font-size: 18px;
   }
 `;
 

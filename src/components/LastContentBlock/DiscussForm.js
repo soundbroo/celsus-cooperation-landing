@@ -52,6 +52,9 @@ const Wrapper = styled.div`
   @media (max-width: 1250px) {
     margin: 0 20px;
   }
+  @media (max-width: 768px) {
+    padding: 34px 24px 24px 24px;
+  }
 `;
 
 const Title = styled.span`
@@ -60,6 +63,10 @@ const Title = styled.span`
   line-height: 24px;
   color: #000000;
   margin-bottom: 48px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
 `;
 
 const Row = styled.div`
@@ -70,6 +77,13 @@ const Row = styled.div`
   max-width: 700px;
   > div:not(:last-child) {
     margin-right: 12px;
+    @media (max-width: 768px) {
+      margin: 0 0 12px 0;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
   }
 `;
 
@@ -84,6 +98,9 @@ const FirstRow = styled(Row)`
   }
   > div:nth-child(4) {
     flex: 5;
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
   }
 `;
 
@@ -112,11 +129,19 @@ const Send = styled.span`
   }
   > div:first-child {
     margin-right: 24px;
+    @media (max-width: 768px) {
+      margin: 0 0 20px 0;
+      width: 100%;
+      padding: 0;
+    }
   }
   > span {
     font-size: 12px;
     line-height: 16px;
     color: #91a3ad;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
     > a {
       color: #00b2ff;
       text-decoration: none;

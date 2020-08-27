@@ -1,0 +1,36 @@
+<svg width="692" height="188" viewBox="0 0 692 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.5">
+<path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" d="M194.649 41.6081L193.127 87.1997L192.674 87.1846L194.196 41.593L194.649 41.6081Z" fill="#48C8FF"/>
+<path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M146.734 49.1967L192.436 87.6574L192.728 87.3104L147.026 48.8498L146.734 49.1967Z" fill="#48C8FF"/>
+<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M70.6576 19.2238L45.5322 51.4161L45.1747 51.1371L70.3002 18.9449L70.6576 19.2238Z" fill="#48C8FF"/>
+<path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M146.913 49.2474L194.576 42.0499L194.508 41.6016L146.845 48.7991L146.913 49.2474Z" fill="#48C8FF"/>
+<path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M48.1803 94.1001L87.572 98.9415L87.6273 98.4915L48.2356 93.6501L48.1803 94.1001Z" fill="#48C8FF"/>
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M101.525 115.92L87.7785 98.5757L87.4231 98.8573L101.169 116.202L101.525 115.92Z" fill="#48C8FF"/>
+<path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M237.59 71.2395L192.796 87.5901L192.952 88.016L237.746 71.6655L237.59 71.2395Z" fill="#48C8FF"/>
+</g>
+<ellipse rx="0.864555" ry="0.864557" transform="matrix(0.991311 0.131536 -0.13153 0.991312 45.255 51.3244)" fill="#48C8FF"/>
+<ellipse rx="1.08068" ry="1.08069" transform="matrix(0.991311 0.131541 -0.131525 0.991313 70.4956 19.1586)" fill="#48C8FF"/>
+<circle cx="192.874" cy="87.803" r="1.34752" transform="rotate(137.567 192.874 87.803)" fill="#48C8FF"/>
+<ellipse rx="0.864554" ry="0.864565" transform="matrix(-0.738065 0.67473 -0.674724 -0.73807 146.88 49.0232)" fill="#48C8FF"/>
+<circle cx="101.635" cy="116.161" r="0.648422" transform="rotate(154.009 101.635 116.161)" fill="#48C8FF"/>
+<ellipse cx="87.6995" cy="98.4275" rx="1.08069" ry="1.08072" transform="rotate(154.009 87.6995 98.4275)" fill="#48C8FF"/>
+<ellipse rx="1.08071" ry="1.08068" transform="matrix(-0.738073 0.674721 -0.674733 -0.738062 194.542 41.8484)" fill="#48C8FF"/>
+<ellipse rx="0.648429" ry="0.648404" transform="matrix(-0.738076 0.674718 -0.674737 -0.738059 237.973 71.466)" fill="#48C8FF"/>
+<ellipse cx="47.7209" cy="94.3535" rx="0.648426" ry="0.64843" transform="rotate(154.009 47.7209 94.3535)" fill="#48C8FF"/>
+<g opacity="0.5">
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M516.893 141.958L482.024 162.394L482.254 162.785L517.122 142.349L516.893 141.958Z" fill="#48C8FF"/>
+<path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M516.951 142.373L538.339 148.059L538.455 147.621L517.067 141.935L516.951 142.373Z" fill="#48C8FF"/>
+<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M483.339 44.7522L461.523 10.231L461.907 9.98876L483.722 44.5099L483.339 44.7522Z" fill="#48C8FF"/>
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M523.902 35.2252L483.308 44.3668L483.407 44.8091L524.002 35.6676L523.902 35.2252Z" fill="#48C8FF"/>
+<path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M524.098 35.2757L558.736 65.5506L558.437 65.892L523.8 35.6171L524.098 35.2757Z" fill="#48C8FF"/>
+<path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd" d="M524.02 35.6624L590.924 14.3056L590.786 13.8737L523.882 35.2304L524.02 35.6624Z" fill="#48C8FF"/>
+</g>
+<circle cx="523.92" cy="35.2957" r="1.72912" transform="rotate(117.296 523.92 35.2957)" fill="#48C8FF"/>
+<circle cx="558.628" cy="65.9344" r="1.29684" transform="rotate(117.296 558.628 65.9344)" fill="#48C8FF"/>
+<circle cx="461.706" cy="9.99913" r="0.864558" transform="rotate(117.296 461.706 9.99913)" fill="#48C8FF"/>
+<circle cx="538.689" cy="147.748" r="0.648418" transform="rotate(117.296 538.689 147.748)" fill="#48C8FF"/>
+<circle cx="516.915" cy="141.863" r="1.0807" transform="rotate(117.296 516.915 141.863)" fill="#48C8FF"/>
+<circle cx="483.456" cy="44.6204" r="1.0807" transform="rotate(117.296 483.456 44.6204)" fill="#48C8FF"/>
+<circle cx="590.853" cy="14.1904" r="0.648418" transform="rotate(117.296 590.853 14.1904)" fill="#48C8FF"/>
+<circle cx="482.435" cy="162.497" r="0.648418" transform="rotate(117.296 482.435 162.497)" fill="#48C8FF"/>
+</svg>

@@ -11,17 +11,17 @@ import Partners from "./Partners";
 const NEWS = [
   {
     title: "Переговоры на этапе подписания соглашений",
-    tags: ["Статья", "Публикации в сми"],
+    tags: ["Статья", "Публикаци"],
     date: "12.07.2019",
   },
   {
     title: "Когда вечная молодость станет реальностью",
-    tags: ["Статья", "Публикации в сми"],
+    tags: ["Статья", "Публикаци"],
     date: "12.07.2019",
   },
   {
     title: "В Москве для анализа маммограм начали применять технологии ИИ",
-    tags: ["Статья", "Публикации в сми"],
+    tags: ["Статья", "Публикаци"],
     date: "12.07.2019",
   },
 ];
@@ -80,6 +80,10 @@ const Title = styled.div`
   @media (max-width: 1250px) {
     padding: 0 20px;
   }
+  @media (max-width: 768px) {
+    font-size: 12px;
+    line-height: 130%;
+  }
 `;
 
 const NewsWrapper = styled.div`
@@ -91,15 +95,29 @@ const NewsWrapper = styled.div`
 
 const News = styled.div`
   display: flex;
-  justify-content: center;
+  width: 100%;
   @media (max-width: 1250px) {
-    flex-direction: column;
-    padding: 0 20px;
+    overflow-x: auto;
+    padding: 32px 0;
+    margin: -32px 0;
+    ::-webkit-scrollbar {
+      height: 0;
+    }
   }
   > div:not(:last-child) {
     margin-right: 32px;
+    @media (max-width: 768px) {
+      margin-right: 16px;
+    }
+  }
+  > div:first-child {
     @media (max-width: 1250px) {
-      margin: 0 0 32px 0;
+      margin-left: 20px;
+    }
+  }
+  > div:last-child {
+    @media (max-width: 1250px) {
+      margin-right: 20px;
     }
   }
 `;
@@ -110,10 +128,19 @@ const AllNewsButton = styled.div`
   @media (max-width: 1250px) {
     margin: 32px 0 0 32px;
   }
+  > div {
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
 `;
 
 const DiscussFormWrapper = styled.div`
   max-width: 1216px;
   width: 100%;
   margin: 88px 0;
+  @media (max-width: 768px) {
+    margin: 56px 0;
+  }
 `;

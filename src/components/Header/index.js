@@ -81,7 +81,7 @@ const Wrapper = styled.div`
   width: 100%;
   justify-content: space-around;
   @media (max-width: 768px) {
-    top: 40px;
+    top: -20px;
     background: #fff;
     height: 64px;
     justify-content: space-between;

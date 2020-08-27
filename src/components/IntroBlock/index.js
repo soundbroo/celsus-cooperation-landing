@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import IntroBackground from "../../img/IntroBackground.svg";
+import IntroBackgroundMobile from "../../img/IntroBackgroundMobile.svg";
 import { ReactComponent as IntroCoopIcon } from "../../img/IntroCoopIcon.svg";
 import Button from "../Common/Button";
 
@@ -34,6 +35,9 @@ const Wrapper = styled.div`
   border-radius: 0px 0px 32px 32px;
   height: 470px;
   width: 100%;
+  @media (max-width: 768px) {
+    height: 612px;
+  }
 `;
 
 const Background = styled.div`
@@ -41,7 +45,7 @@ const Background = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 0%;
+  top: 0;
   left: 0;
   right: 0;
   background: #5aceff;
@@ -50,6 +54,11 @@ const Background = styled.div`
   background-image: ${`url(${IntroBackground})`};
   background-repeat: no-repeat;
   background-position-y: 42px;
+  @media (max-width: 768px) {
+    top: 60px;
+    background-image: ${`url(${IntroBackgroundMobile})`};
+    background-position-y: -52px;
+  }
 `;
 
 const Content = styled.div`
@@ -62,6 +71,16 @@ const Content = styled.div`
   > svg {
     width: 296px;
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 192px;
+    > svg {
+      width: 135px;
+      height: 144px;
+      flex-shrink: 0;
+    }
+  }
 `;
 
 const Info = styled.div`
@@ -73,10 +92,24 @@ const Info = styled.div`
   @media (max-width: 1250px) {
     padding-right: 20px;
   }
+  @media (max-width: 768px) {
+    padding: 0;
+  }
   > span {
     font-weight: 500;
     font-size: 40px;
     line-height: 140.62%;
+    @media (max-width: 900px) {
+      font-size: 26px;
+    }
+    @media (max-width: 768px) {
+      margin: -8px 0 8px 0;
+    }
+  }
+  span {
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
   }
   > div {
     display: flex;
@@ -89,12 +122,20 @@ const Info = styled.div`
       @media (max-width: 900px) {
         margin-top: 40px;
       }
+      @media (max-width: 768px) {
+        margin: 32px 20px 0 20px;
+        padding: 0;
+      }
     }
     > span {
       font-weight: 300;
       font-size: 22px;
       line-height: 140.62%;
       max-width: 500px;
+      @media (max-width: 768px) {
+        font-weight: normal;
+        font-size: 14px;
+      }
     }
   }
 `;

@@ -35,12 +35,24 @@ const Footer = () => (
       <Social>
         <span>Мы в соц.сетях</span>
         <div>
-          <InstagramIcon />
-          <YoutubeIcon />
-          <TwitterIcon />
-          <FacebookIcon />
-          <VkIcon />
-          <TelegramIcon />
+          <a href="#">
+            <InstagramIcon />
+          </a>
+          <a href="#">
+            <YoutubeIcon />
+          </a>
+          <a href="#">
+            <TwitterIcon />
+          </a>
+          <a href="#">
+            <FacebookIcon />
+          </a>
+          <a href="#">
+            <VkIcon />
+          </a>
+          <a href="#">
+            <TelegramIcon />
+          </a>
         </div>
       </Social>
     </UnderFooter>
@@ -119,6 +131,7 @@ const Texts = styled.div`
       margin-right: 32px;
     }
     @media (max-width: 1024px) {
+      text-align: center;
       &:first-child {
         margin: 0 0 8px 0;
       }
@@ -151,7 +164,7 @@ const Social = styled.div`
     @media (max-width: 1024px) {
       margin: 0 0 48px 0;
     }
-    > svg:not(:last-child) {
+    > a:not(:last-child) {
       margin-right: 16px;
     }
   }

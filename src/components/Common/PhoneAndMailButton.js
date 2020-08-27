@@ -9,8 +9,8 @@ const PhoneAneMailButton = ({ dark }) => (
       <PhoneIcon />
     </Icon>
     <Contacts dark={dark}>
-      <span>+7 499 704 05-04</span>
-      <span>celsus@celsus.ai</span>
+      <a href="tel:+7-499-704-05-04">+7 499 704 05-04</a>
+      <a href="mailto:celsus@celsus.ai">celsus@celsus.ai</a>
     </Contacts>
   </Wrapper>
 );
@@ -39,7 +39,8 @@ const Contacts = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  > span {
+  > a {
+    text-decoration: none;
     color: ${({ dark }) => (dark ? "#000" : "#fff")};
     &:first-child {
       font-weight: 500;

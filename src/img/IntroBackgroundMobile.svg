@@ -1,0 +1,23 @@
+<svg width="360" height="274" viewBox="0 0 360 274" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<g opacity="0.5">
+<path opacity="0.6" d="M345.62 238.221L364.781 161.063" stroke="white"/>
+</g>
+<ellipse cx="345.327" cy="238.448" rx="2.255" ry="2.24031" transform="rotate(-180 345.327 238.448)" fill="white"/>
+<path opacity="0.4" d="M204.132 74.9445L168.186 135.782" stroke="white"/>
+<ellipse cx="204.294" cy="74.8392" rx="1.5033" ry="1.49351" transform="rotate(-180 204.294 74.8392)" fill="white"/>
+<ellipse cx="168.14" cy="135.658" rx="1.87912" ry="1.8669" transform="rotate(-180 168.14 135.658)" fill="white"/>
+<path opacity="0.4" d="M-3.16498 198.716L32.1641 245.017" stroke="white"/>
+<ellipse cx="32.1633" cy="244.27" rx="3.00664" ry="2.98703" transform="rotate(-180 32.1633 244.27)" fill="white"/>
+<path opacity="0.3" d="M134.982 197.601L194.365 234.939" stroke="white"/>
+<path opacity="0.2" d="M202.634 272.278L194.365 234.939" stroke="white"/>
+<ellipse cx="203.009" cy="272.652" rx="1.12747" ry="1.12006" transform="rotate(-180 203.009 272.652)" fill="white"/>
+<ellipse cx="194.738" cy="234.566" rx="1.87915" ry="1.86691" transform="rotate(-180 194.738 234.566)" fill="white"/>
+<ellipse cx="135.359" cy="197.974" rx="1.12749" ry="1.12016" transform="rotate(-180 135.359 197.974)" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="1232" height="459" fill="white" transform="translate(-377 -185)"/>
+</clipPath>
+</defs>
+</svg>

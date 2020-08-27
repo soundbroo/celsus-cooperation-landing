@@ -36,7 +36,10 @@ export default Partners;
 const Wrapper = styled.div`
   max-width: 1216px;
   width: 100%;
-  margin: 104px 0 0 0;
+  margin: 236px 0 0 0;
+  @media (max-width: 768px) {
+    margin: 182px 0 0 0;
+  }
 `;
 
 const Title = styled.span`
@@ -50,6 +53,10 @@ const Title = styled.span`
   @media (max-width: 1250px) {
     padding: 0 20px;
   }
+  @media (max-width: 768px) {
+    font-size: 12px;
+    line-height: 130%;
+  }
 `;
 
 const Carousel = styled.div`
@@ -61,9 +68,15 @@ const Carousel = styled.div`
   @media (max-width: 1250px) {
     margin: 40px 20px 0 20px;
   }
+  @media (max-width: 768px) {
+    margin-top: 24px;
+  }
   > svg {
     cursor: pointer;
     flex-shrink: 0;
+    @media (max-width: 768px) {
+      width: 32px;
+    }
   }
 `;
 
@@ -86,4 +99,10 @@ const DiscussButton = styled.div`
   display: flex;
   justify-content: center;
   margin: 40px 0 112px 0;
+  @media (max-width: 768px) {
+    margin: 24px 0 56px 0;
+    > div {
+      height: 56px;
+    }
+  }
 `;

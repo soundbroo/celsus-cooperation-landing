@@ -32,10 +32,13 @@ const Wrapper = styled.div`
   background: #ffffff;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.06), 0px 8px 32px rgba(0, 0, 0, 0.06);
   border-radius: 16px;
-  max-width: 384px;
+  min-width: 384px;
   overflow: hidden;
-  @media (max-width: 1250px) {
-    max-width: 100%;
+  @media (max-width: 425px) {
+    min-width: 312px;
+  }
+  @media (max-width: 320px) {
+    min-width: 280px;
   }
 `;
 
@@ -44,10 +47,18 @@ const Image = styled.div`
   height: 186px;
   width: 100%;
   background: #cecece;
+  @media (max-width: 425px) {
+    height: 120px;
+  }
   > svg {
     position: absolute;
     bottom: 12px;
     right: 12px;
+    @media (max-width: 425px) {
+      bottom: -6px;
+      right: 8px;
+      width: 100px;
+    }
   }
 `;
 
@@ -58,6 +69,10 @@ const Content = styled.div`
   justify-content: space-between;
   height: 106px;
   width: 100%;
+  @media (max-width: 425px) {
+    padding: 16px 0;
+    height: 80px;
+  }
 `;
 
 const Title = styled.span`
@@ -66,6 +81,9 @@ const Title = styled.span`
   line-height: 140%;
   color: #000;
   padding: 0 24px;
+  @media (max-width: 425px) {
+    padding: 0 16px;
+  }
 `;
 
 const Footer = styled.div`
@@ -73,6 +91,9 @@ const Footer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 24px;
+  @media (max-width: 425px) {
+    padding: 0 16px;
+  }
 `;
 
 const Tags = styled.div`

@@ -6,6 +6,9 @@ import Facts from "./Facts";
 import Button from "../Common/Button";
 
 import { ReactComponent as ButtonPdfIcon } from "../../img/ButtonPdfIcon.svg";
+import presentationLeftBg from "../../img/PresentationLeftBg.svg";
+import presentationCenterBg from "../../img/PresentationCenterBg.svg";
+import presentationRightBg from "../../img/PresentationRightBg.svg";
 
 const FirstContentBlock = ({ children }) => (
   <Wrapper>
@@ -46,23 +49,38 @@ const Wrapper = styled.div`
 const DownloadPresentation = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 1216px;
+  align-items: center;
+  justify-content: center;
+  max-width: 692px;
   width: 100%;
-  margin-bottom: 88px;
+  height: 188px;
+  background: #fff;
+  border-radius: 24px;
+  margin-bottom: -96px;
+  background-image: ${`url(${presentationLeftBg}), url(${presentationCenterBg}), url(${presentationRightBg})`};
+  background-repeat: no-repeat;
+  background-position-x: left, center, right;
+  background-position-y: bottom, center, bottom;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.04), 0px 4px 32px rgba(0, 0, 0, 0.04);
+  @media (max-width: 768px) {
+    width: calc(100% - 32px);
+    background-position-x: -32px, center, calc(100% + 32px);
+    background-size: 27%, 100%, 27%;
+  }
+  @media (max-width: 425px) {
+    background-size: 35%, 100%, 35%;
+  }
   > span {
     font-weight: 500;
     font-size: 20px;
     line-height: 140.62%;
     color: #000000;
     margin-bottom: 20px;
-    @media (max-width: 1250px) {
-      padding: 0 20px;
-    }
-  }
-  > div {
-    align-self: flex-start;
-    @media (max-width: 1250px) {
-      margin: 0 20px;
+    max-width: 304px;
+    text-align: center;
+    @media (max-width: 768px) {
+      padding: 0 16px;
+      font-size: 18px;
     }
   }
 `;

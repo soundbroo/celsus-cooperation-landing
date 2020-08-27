@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const InviteCard = ({ icon, title, items }) => (
   <Wrapper>
-    <Icon>{icon}</Icon>
     <List>
       <Title>{title}</Title>
       <Items>
@@ -12,6 +11,7 @@ const InviteCard = ({ icon, title, items }) => (
         ))}
       </Items>
     </List>
+    <Icon>{icon}</Icon>
   </Wrapper>
 );
 
@@ -19,23 +19,24 @@ export default InviteCard;
 
 const Wrapper = styled.div`
   display: flex;
+  justify-content: space-between;
   background: #f2f5f7;
   border-radius: 24px;
   padding: 32px;
   box-sizing: border-box;
   @media (max-width: 768px) {
-    padding: 20px 20px 20px 32px;
+    padding: 24px 24px 24px 32px;
   }
 `;
 
 const Icon = styled.div`
-  margin-right: 32px;
+  padding: 0 0 0 20px;
   @media (max-width: 768px) {
     display: flex;
-    align-items: center;
     margin-bottom: 20px;
     > svg {
-      width: 32px;
+      width: 46px;
+      height: 46px;
     }
   }
 `;
@@ -47,7 +48,7 @@ const Title = styled.span`
   line-height: 28px;
   @media (max-width: 768px) {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 24px;
   }
 `;
 const Items = styled.ul`
@@ -64,7 +65,6 @@ const Items = styled.ul`
     }
     @media (max-width: 768px) {
       font-size: 14px;
-      line-height: 18px;
     }
   }
 `;
